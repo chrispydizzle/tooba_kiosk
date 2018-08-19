@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block header %}
+    Tooba
+{% endblock %}
+{% block content %}
+    {% if sectors %}
+        {% for sector in sectors %}
+            <div class="col-md-4 block{{ sector.id }}a ">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{% url 'sector' sector.id %}">
+                        <div class="card-body">{{ sector.sector_text }}</div>
+                        <div class="subtext">{{ sector.project_set.count }}</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 block{{ sector.id }}b ">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{% url 'sector' sector.id %}">
+                        <div class="card-body">
+                            <div class="container">{{ sector.sector_text }}</div>
+                            <div class="subtext">{{ sector.project_set.count }}</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No sectors.. Oh noes..</p>
+    {% endif %}
+{% endblock %}

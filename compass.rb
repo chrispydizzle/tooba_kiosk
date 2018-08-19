@@ -1,0 +1,9 @@
+preferred_syntax = :scss
+http_path = '/'
+css_dir = 'kiosk/static/kiosk'
+sass_dir = 'kiosk/static/kiosk'
+images_dir = 'kiosk/static/kiosk'
+javascripts_dir = 'kiosk/static/kiosk'
+relative_assets = true
+line_comments = true
+# output_style = :compressed

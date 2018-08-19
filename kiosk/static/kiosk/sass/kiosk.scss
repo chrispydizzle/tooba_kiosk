@@ -1,0 +1,71 @@
+body, html {
+  background: rgb(219, 255, 217);
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', serif;
+}
+
+.tree {
+  max-height: 32px;
+  padding-right: 1em;
+}
+
+main div.bg-light {
+  background-color: rgb(219, 255, 217) !important;
+}
+
+.card a {
+  color: rgb(29, 112, 83);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.card-body {
+
+  width: 100%;
+  height: 25vh;
+  .subtext {
+    text-align: center;
+    padding-top: 10%;
+    display: none;
+  }
+  .container {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 20%;
+    font-weight: 200;
+
+  }
+}
+
+.block1a, .block2a, .block3a {
+  display: none;
+}
+
+.block4a {
+  visibility: hidden;
+}
+.arti-album{
+  width: 100%;
+  .container{
+    width: 100%;
+    .row{
+      width: 100%;
+      margin: auto;
+      .artifact{
+        margin: auto;
+      }
+    }
+  }
+}
+.artifact {
+  .card-body {
+    height: auto;
+  }
+}
+
+strong span {
+  text-decoration: underline;
+}
