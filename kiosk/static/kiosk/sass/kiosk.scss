@@ -1,31 +1,86 @@
+$tooba-green: rgb(236, 255, 235);
+
+body.landing {
+  background: black url("images/landingbg.jpg");
+  height: 100vh;
+}
+
+.bg-toobalight {
+  background-color: rgb(203, 203, 203);
+}
+
+body {
+  background-color: $tooba-green;
+}
+
 body, html {
-  background: rgb(219, 255, 217);
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', serif;
 }
 
 .tree {
-  max-height: 32px;
-  padding-right: 1em;
+    max-height: 115%;
+    padding: 0 1em 0 1em;
+    background: rgb(236, 255, 235);
+    position: absolute;
+    margin-left: -2vw;
 }
 
 main div.bg-light {
-  background-color: rgb(219, 255, 217) !important;
+  background-color: $tooba-green !important;
+}
+
+.card {
+  background: transparent;
+  border: none;
+  transition: .25s all ease;
+
+  &.active {
+    transform: translate(5px, 5px);
+  }
 }
 
 .card a {
-  color: rgb(29, 112, 83);
+  color: white;
+  background: linear-gradient(#24c35b, #1d7053);
+  border-radius: 20px;
+
 
   &:hover {
     text-decoration: none;
   }
 }
 
-.card-body {
+.nowhite {
+  background: transparent;
+}
 
+.mb-2 .card-body {
+    height: 15vh;
+    padding: 0;
+    .image{
+      img{
+          max-height: 12.5vh;
+        min-height: 12.5vh;
+        margin: 1vh 0.8vw;
+      }
+    }
+
+  .container{
+    &.whitey{
+      color: white;
+      padding-top: 5%;
+    }
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.card-body {
   width: 100%;
-  height: 25vh;
+  height: 10vh;
+
   .subtext {
     text-align: center;
     padding-top: 10%;
@@ -34,32 +89,27 @@ main div.bg-light {
   .container {
     font-size: 2.5rem;
     text-align: center;
-    padding-top: 20%;
     font-weight: 200;
-
+    line-height: 5vh;
   }
 }
 
 .block1a, .block2a, .block3a {
-  display: none;
+  // display: none;
 }
 
 .block4a {
-  visibility: hidden;
+  // visibility: hidden;
 }
-.arti-album{
-  width: 100%;
-  .container{
-    width: 100%;
-    .row{
-      width: 100%;
-      margin: auto;
-      .artifact{
-        margin: auto;
-      }
-    }
-  }
+
+.arti-album img {
+    max-width: 100%;
 }
+
+.arti-album .card-body {
+    height: auto;
+}
+
 .artifact {
   .card-body {
     height: auto;
@@ -68,4 +118,51 @@ main div.bg-light {
 
 strong span {
   text-decoration: underline;
+  color: #1d7053;
 }
+
+.breathe {
+  margin-bottom: 5vh;
+  margin-top: 15vh;
+}
+
+.backbutton {
+  max-height: 45px;
+  padding-right: 1em;
+  position: relative;
+  left: 5vw;
+  transition: .25s all ease;
+  &.active {
+    transform: translate(5px, 5px);
+  }
+}
+
+.tbreadcrumb{
+  margin-left: 8vw;
+  position:absolute;
+  font-size: 1.2em;
+  strong span{
+    cursor: pointer;
+    transition: .5s all ease;
+    &.clicked{
+      font-size: 2em;
+      text-decoration: none;
+    }
+  }
+}
+
+.discussion{
+  border: #24c35b 3px solid;
+}
+
+.discussion {header {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+  .subject{
+    font-style: italic;
+    padding-bottom: .5em;
+  }
+}
+

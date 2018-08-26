@@ -1,22 +1,19 @@
 {% extends "base.html" %}
-{% block header %}<span linkurl="/">Tooba</span> >
+{% block header %}<span linkurl="/portal/">Tooba</span> >
     <span linkurl="{% url 'sector' artifact.project.sector.id %}">{{ sectorname }}</span> >
-    <span linkurl="{% url 'project' artifact.project.id %}">{{ projectname }}</span> > {{ artifact.artifact_text }}{% endblock %}
+    <span linkurl="{% url 'project' artifact.project.id %}">{{ projectname }}</span> >
+    {{ artifact.artifact_text }}{% endblock %}
 {% block content %}
-    <div class="album arti-album py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="artifact">
-                    <div class="card mb-4 shadow-sm">
-                        <a href="javascript:alert('print');">
-                            <div class="card-body">
-                                <img src="{{ artifact.file_url }}"/>
-                                <div class="subtext">w/e</div>
-                            </div>
-                        </a>
-                    </div>
+    <div class="col-md-7 arti-album">
+        <div class="card mb-7 shadow-sm">
+            <a href="javascript:alert('print');">
+                <div class="card-body">
+                    <img src="{{ artifact.file_url }}"/>
+                    <div class="subtext">w/e</div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
+    <div class="col-md-1"></div>
+    {% include "discussion.html" %}
 {% endblock %}

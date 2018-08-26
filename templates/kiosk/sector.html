@@ -1,20 +1,18 @@
 {% extends "base.html" %}
 {% block header %}
-    <span linkurl="/">Tooba</span> >
+    <span linkurl="/portal">Tooba</span> >
     {{ sectorname }}{% endblock %}
 
 {% block content %}
     {% if projects %}
         {% for project in projects %}
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
+            <div class="col-md-2">
+                <div class="card mb-2 shadow-sm">
                     <a href="{% url 'project' project.id %}">
                         <div class="card-body">
-
+                            <div class="image"><img src="{{ project.img_url }}" /></div>
                             <div class="container">{{ project.project_text }}</div>
                             <div class="subtext"> ({{ project.artifact_set.count }})</div>
-
-
                         </div>
                     </a>
                 </div>

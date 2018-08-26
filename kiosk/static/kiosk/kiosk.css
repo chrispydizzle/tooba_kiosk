@@ -1,84 +1,178 @@
-/* line 1, sass/kiosk.scss */
+/* line 3, sass/kiosk.scss */
+body.landing {
+  background: black url("images/landingbg.jpg");
+  height: 100vh;
+}
+
+/* line 8, sass/kiosk.scss */
+.bg-toobalight {
+  background-color: #cbcbcb;
+}
+
+/* line 12, sass/kiosk.scss */
+body {
+  background-color: #ecffeb;
+}
+
+/* line 16, sass/kiosk.scss */
 body, html {
-  background: #dbffd9;
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', serif;
 }
 
-/* line 8, sass/kiosk.scss */
+/* line 22, sass/kiosk.scss */
 .tree {
-  max-height: 32px;
-  padding-right: 1em;
+  max-height: 115%;
+  padding: 0 1em 0 1em;
+  background: #ecffeb;
+  position: absolute;
+  margin-left: -2vw;
 }
 
-/* line 13, sass/kiosk.scss */
+/* line 30, sass/kiosk.scss */
 main div.bg-light {
-  background-color: #dbffd9 !important;
+  background-color: #ecffeb !important;
 }
 
-/* line 17, sass/kiosk.scss */
-.card a {
-  color: #1d7053;
+/* line 34, sass/kiosk.scss */
+.card {
+  background: transparent;
+  border: none;
+  transition: .25s all ease;
 }
-/* line 20, sass/kiosk.scss */
+/* line 39, sass/kiosk.scss */
+.card.active {
+  transform: translate(5px, 5px);
+}
+
+/* line 44, sass/kiosk.scss */
+.card a {
+  color: white;
+  background: linear-gradient(#24c35b, #1d7053);
+  border-radius: 20px;
+}
+/* line 50, sass/kiosk.scss */
 .card a:hover {
   text-decoration: none;
 }
 
-/* line 25, sass/kiosk.scss */
+/* line 55, sass/kiosk.scss */
+.nowhite {
+  background: transparent;
+}
+
+/* line 59, sass/kiosk.scss */
+.mb-2 .card-body {
+  height: 15vh;
+  padding: 0;
+}
+/* line 63, sass/kiosk.scss */
+.mb-2 .card-body .image img {
+  max-height: 12.5vh;
+  min-height: 12.5vh;
+  margin: 1vh 0.8vw;
+}
+/* line 70, sass/kiosk.scss */
+.mb-2 .card-body .container {
+  font-size: 1em;
+  color: black;
+}
+/* line 71, sass/kiosk.scss */
+.mb-2 .card-body .container.whitey {
+  color: white;
+  padding-top: 5%;
+}
+
+/* line 80, sass/kiosk.scss */
 .card-body {
   width: 100%;
-  height: 25vh;
+  height: 10vh;
 }
-/* line 29, sass/kiosk.scss */
+/* line 84, sass/kiosk.scss */
 .card-body .subtext {
   text-align: center;
   padding-top: 10%;
   display: none;
 }
-/* line 34, sass/kiosk.scss */
+/* line 89, sass/kiosk.scss */
 .card-body .container {
   font-size: 2.5rem;
   text-align: center;
-  padding-top: 20%;
   font-weight: 200;
+  line-height: 5vh;
 }
 
-/* line 43, sass/kiosk.scss */
-.block1a, .block2a, .block3a {
-  display: none;
+/* line 105, sass/kiosk.scss */
+.arti-album img {
+  max-width: 100%;
 }
 
-/* line 47, sass/kiosk.scss */
-.block4a {
-  visibility: hidden;
+/* line 109, sass/kiosk.scss */
+.arti-album .card-body {
+  height: auto;
 }
 
-/* line 50, sass/kiosk.scss */
-.arti-album {
-  width: 100%;
-}
-/* line 52, sass/kiosk.scss */
-.arti-album .container {
-  width: 100%;
-}
-/* line 54, sass/kiosk.scss */
-.arti-album .container .row {
-  width: 100%;
-  margin: auto;
-}
-/* line 57, sass/kiosk.scss */
-.arti-album .container .row .artifact {
-  margin: auto;
-}
-
-/* line 64, sass/kiosk.scss */
+/* line 114, sass/kiosk.scss */
 .artifact .card-body {
   height: auto;
 }
 
-/* line 69, sass/kiosk.scss */
+/* line 119, sass/kiosk.scss */
 strong span {
   text-decoration: underline;
+  color: #1d7053;
+}
+
+/* line 124, sass/kiosk.scss */
+.breathe {
+  margin-bottom: 5vh;
+  margin-top: 15vh;
+}
+
+/* line 129, sass/kiosk.scss */
+.backbutton {
+  max-height: 45px;
+  padding-right: 1em;
+  position: relative;
+  left: 5vw;
+  transition: .25s all ease;
+}
+/* line 135, sass/kiosk.scss */
+.backbutton.active {
+  transform: translate(5px, 5px);
+}
+
+/* line 140, sass/kiosk.scss */
+.tbreadcrumb {
+  margin-left: 8vw;
+  position: absolute;
+  font-size: 1.2em;
+}
+/* line 144, sass/kiosk.scss */
+.tbreadcrumb strong span {
+  cursor: pointer;
+  transition: .5s all ease;
+}
+/* line 147, sass/kiosk.scss */
+.tbreadcrumb strong span.clicked {
+  font-size: 2em;
+  text-decoration: none;
+}
+
+/* line 154, sass/kiosk.scss */
+.discussion {
+  border: #24c35b 3px solid;
+}
+
+/* line 158, sass/kiosk.scss */
+.discussion header {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+/* line 163, sass/kiosk.scss */
+.discussion .subject {
+  font-style: italic;
+  padding-bottom: .5em;
 }

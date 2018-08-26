@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    <title>Tooba Kiosk</title>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="{% static 'kiosk/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'kiosk/album.css' %}" rel="stylesheet">
+    <link href="{% static 'kiosk/kiosk.css' %}" rel="stylesheet">
+    <link href="{% static 'kiosk/pin.css' %}" rel="stylesheet">
+</head>
+
+<body class="landing">
+<div id="prompt">
+    <span class="">Enter PIN to Unlock</span>
+</div>
+<div class="invisible" id="pin">
+  <div class="dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <p>Enter the password</p>
+  <div class="numbers">
+    <div class="number">1</div>
+    <div class="number">2</div>
+    <div class="number">3</div>
+    <div class="number">4</div>
+    <div class="number">5</div>
+    <div class="number">6</div>
+    <div class="number">7</div>
+    <div class="number">8</div>
+    <div class="number">9</div>
+    <div class="number">0</div>
+  </div>
+</div>
+</body>
+<script src="{% static 'kiosk/jquery-3.3.1.slim.min.js' %}"></script>
+<script src="{% static 'kiosk/pin.js' %}"></script>
+</html>

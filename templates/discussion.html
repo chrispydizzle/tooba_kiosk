@@ -1,0 +1,12 @@
+<div class="discussion col-md-4">
+            <header>
+                Project Summary
+            </header>
+            <article>
+                {% for d in discussion %}
+                    <div class="subject">{{ d.discussion_subject}}</div>
+                    <p class="discuss">{{ d.discussion_text }}</p>
+                    by <span class="author">{{d.author}}</span> @ <span class="time">{{ d.created_date }}</span>
+                {% endfor %}
+            </article>
+        </div>

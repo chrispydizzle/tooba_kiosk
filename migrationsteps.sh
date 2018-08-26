@@ -19,6 +19,6 @@ if [ "$lent" == "4" ]; then
         echo $MIGR
 fi
 
-python manage.py makemigrations $1
-python manage.py sqlmigrate $1 $MIGR
-python manage.py migrate
+python3 manage.py makemigrations kiosk
+python3 manage.py sqlmigrate kiosk $MIGR
+python3 manage.py migrate

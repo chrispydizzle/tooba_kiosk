@@ -13,6 +13,8 @@ class DiscussionItem(models.Model):
     discussion_subject = models.CharField(max_length=1250, blank="True")
     discussion_text = models.CharField(max_length=2000)
     created_date = models.DateTimeField('publish time', default=timezone.now, blank="True")
+    discussion_type = models.SmallIntegerField()
+    discussion_id = models.IntegerField()
 
 
 class Project(models.Model):
@@ -20,7 +22,6 @@ class Project(models.Model):
     sector = models.ForeignKey(Sector, on_delete=models.CASCADE)
     img_url = models.CharField('image', max_length=200, blank="True")
     created_date = models.DateTimeField('publish time', default=timezone.now)
-    discussion_items = models.ForeignKey(DiscussionItem, on_delete=models.CASCADE, blank="True", null=True)
 
 
 class Artifact(models.Model):
@@ -29,5 +30,8 @@ class Artifact(models.Model):
     file_url = models.CharField(max_length=200)
     file_type = models.CharField(max_length=4)
     created_date = models.DateTimeField('publish time', default=timezone.now)
-    discussion_items = models.ForeignKey(DiscussionItem, on_delete=models.CASCADE, blank="True", null=True)
 
+class Announcements(models.Model):
+    title = models.CharField(max_length=50)
+    text = models.CharField(max_length=500)
+    date = models.DateTimeField('publish time', default=timezone.now)

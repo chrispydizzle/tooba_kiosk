@@ -5,15 +5,8 @@
 {% block content %}
     {% if sectors %}
         {% for sector in sectors %}
-            <div class="col-md-4 block{{ sector.id }}a ">
-                <div class="card mb-4 shadow-sm">
-                    <a href="{% url 'sector' sector.id %}">
-                        <div class="card-body">{{ sector.sector_text }}</div>
-                        <div class="subtext">{{ sector.project_set.count }}</div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 block{{ sector.id }}b ">
+<div class="col-md-1 block{{ sector.id }}b breathe"></div>
+            <div class="col-md-5 block{{ sector.id }}b breathe">
                 <div class="card mb-4 shadow-sm">
                     <a href="{% url 'sector' sector.id %}">
                         <div class="card-body">

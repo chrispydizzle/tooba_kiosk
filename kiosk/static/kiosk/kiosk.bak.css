@@ -1,0 +1,94 @@
+/* line 1, sass/kiosk.bak.scss */
+body.landing {
+  background: black url("images/landingbg.jpg");
+  height: 100vh;
+}
+
+/* line 6, sass/kiosk.bak.scss */
+body {
+  background-color: #dbffd9;
+}
+
+/* line 10, sass/kiosk.bak.scss */
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', serif;
+}
+
+/* line 16, sass/kiosk.bak.scss */
+.tree {
+  max-height: 32px;
+  padding-right: 1em;
+}
+
+/* line 21, sass/kiosk.bak.scss */
+main div.bg-light {
+  background-color: #dbffd9 !important;
+}
+
+/* line 25, sass/kiosk.bak.scss */
+.card a {
+  color: #1d7053;
+}
+/* line 28, sass/kiosk.bak.scss */
+.card a:hover {
+  text-decoration: none;
+}
+
+/* line 33, sass/kiosk.bak.scss */
+.card-body {
+  width: 100%;
+  height: 25vh;
+}
+/* line 37, sass/kiosk.bak.scss */
+.card-body .subtext {
+  text-align: center;
+  padding-top: 10%;
+  display: none;
+}
+/* line 42, sass/kiosk.bak.scss */
+.card-body .container {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 20%;
+  font-weight: 200;
+}
+
+/* line 51, sass/kiosk.bak.scss */
+.block1a, .block2a, .block3a {
+  display: none;
+}
+
+/* line 55, sass/kiosk.bak.scss */
+.block4a {
+  visibility: hidden;
+}
+
+/* line 59, sass/kiosk.bak.scss */
+.arti-album {
+  width: 100%;
+}
+/* line 61, sass/kiosk.bak.scss */
+.arti-album .container {
+  width: 100%;
+}
+/* line 63, sass/kiosk.bak.scss */
+.arti-album .container .row {
+  width: 100%;
+  margin: auto;
+}
+/* line 66, sass/kiosk.bak.scss */
+.arti-album .container .row .artifact {
+  margin: auto;
+}
+
+/* line 74, sass/kiosk.bak.scss */
+.artifact .card-body {
+  height: auto;
+}
+
+/* line 79, sass/kiosk.bak.scss */
+strong span {
+  text-decoration: underline;
+}
