@@ -1,10 +1,15 @@
-/* line 6, sass/pin.scss */
+/* line 1, sass/pin.scss */
+html {
+  overflow: hidden;
+}
+
+/* line 10, sass/pin.scss */
 #inspiration {
   position: fixed;
   right: 1em;
   bottom: 1em;
 }
-/* line 10, sass/pin.scss */
+/* line 14, sass/pin.scss */
 #inspiration a {
   display: inline-block;
   float: left;
@@ -13,11 +18,11 @@
   color: white;
   transition: all 1s ease;
 }
-/* line 17, sass/pin.scss */
+/* line 21, sass/pin.scss */
 #inspiration a:hover {
   color: #212121;
 }
-/* line 21, sass/pin.scss */
+/* line 25, sass/pin.scss */
 #inspiration p {
   margin: 0;
   padding-left: .4em;
@@ -26,7 +31,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 30, sass/pin.scss */
+/* line 34, sass/pin.scss */
 #pin {
   transition: all 2s ease;
   background: #212121;
@@ -44,24 +49,24 @@
   position: relative;
   overflow: hidden;
 }
-/* line 31, sass/pin.scss */
+/* line 35, sass/pin.scss */
 #pin.invisible {
   opacity: 0;
   height: 15vh;
   top: 65vh;
 }
-/* line 37, sass/pin.scss */
+/* line 41, sass/pin.scss */
 #pin.visible {
   opacity: 1;
   height: 70vh;
   top: 10vh;
 }
-/* line 43, sass/pin.scss */
+/* line 47, sass/pin.scss */
 #pin.success {
   background: green;
 }
 
-/* line 64, sass/pin.scss */
+/* line 68, sass/pin.scss */
 .dots {
   width: 50%;
   display: flex;
@@ -70,7 +75,7 @@
   padding-top: 3em;
 }
 
-/* line 72, sass/pin.scss */
+/* line 76, sass/pin.scss */
 .dot {
   position: relative;
   background: rgba(255, 255, 255, 0.2);
@@ -79,26 +84,26 @@
   height: 1.5em;
   transform: scale3d(0.7, 0.7, 0.7);
 }
-/* line 79, sass/pin.scss */
+/* line 83, sass/pin.scss */
 .dot.active {
   animation: growDot .5s ease;
   animation-fill-mode: forwards;
 }
-/* line 83, sass/pin.scss */
+/* line 87, sass/pin.scss */
 .dot.wrong {
   animation: wrong .9s ease;
 }
-/* line 86, sass/pin.scss */
+/* line 90, sass/pin.scss */
 .dot.correct {
   animation: correct .9s ease;
 }
 
-/* line 91, sass/pin.scss */
+/* line 95, sass/pin.scss */
 #pin p {
   font-size: .8em;
 }
 
-/* line 95, sass/pin.scss */
+/* line 99, sass/pin.scss */
 .numbers {
   display: flex;
   flex-flow: row wrap;
@@ -108,7 +113,7 @@
   margin: 2em 0;
 }
 
-/* line 104, sass/pin.scss */
+/* line 108, sass/pin.scss */
 .number {
   position: relative;
   width: 2em;
@@ -124,15 +129,15 @@
   user-select: none;
   transition: all .5s ease;
 }
-/* line 118, sass/pin.scss */
+/* line 122, sass/pin.scss */
 .number:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 120, sass/pin.scss */
+/* line 124, sass/pin.scss */
 .number:hover:before {
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
-/* line 124, sass/pin.scss */
+/* line 128, sass/pin.scss */
 .number:before {
   content: "";
   position: absolute;
@@ -143,7 +148,7 @@
   border-radius: 2em;
   transition: all .5s ease;
 }
-/* line 134, sass/pin.scss */
+/* line 138, sass/pin.scss */
 .number.grow:before {
   animation: grow .6s ease;
 }
@@ -200,7 +205,7 @@
     background: limegreen;
   }
 }
-/* line 197, sass/pin.scss */
+/* line 201, sass/pin.scss */
 #prompt {
   bottom: 15vh;
   position: absolute;
@@ -211,7 +216,7 @@
   line-height: 2em;
   font-size: 1.8em;
 }
-/* line 207, sass/pin.scss */
+/* line 211, sass/pin.scss */
 #prompt span {
   transition: .25s all ease;
   cursor: pointer;
@@ -221,7 +226,7 @@
   text-align: center;
   box-shadow: 6px 5px 0 0 rgba(144, 174, 50, 0.5);
 }
-/* line 208, sass/pin.scss */
+/* line 212, sass/pin.scss */
 #prompt span.active {
   box-shadow: none;
   transform: translate(5px, 5px);
