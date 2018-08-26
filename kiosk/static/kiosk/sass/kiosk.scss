@@ -60,6 +60,8 @@ main div.bg-light {
     height: 15vh;
     padding: 0;
     .image{
+      width: 90%;
+    overflow: hidden;
       img{
           max-height: 12.5vh;
         min-height: 12.5vh;
