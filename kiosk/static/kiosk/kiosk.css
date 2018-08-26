@@ -67,35 +67,40 @@ main div.bg-light {
   height: 15vh;
   padding: 0;
 }
-/* line 63, sass/kiosk.scss */
+/* line 62, sass/kiosk.scss */
+.mb-2 .card-body .image {
+  width: 90%;
+  overflow: hidden;
+}
+/* line 65, sass/kiosk.scss */
 .mb-2 .card-body .image img {
   max-height: 12.5vh;
   min-height: 12.5vh;
   margin: 1vh 0.8vw;
 }
-/* line 70, sass/kiosk.scss */
+/* line 72, sass/kiosk.scss */
 .mb-2 .card-body .container {
   font-size: 1em;
   color: black;
 }
-/* line 71, sass/kiosk.scss */
+/* line 73, sass/kiosk.scss */
 .mb-2 .card-body .container.whitey {
   color: white;
   padding-top: 5%;
 }
 
-/* line 80, sass/kiosk.scss */
+/* line 82, sass/kiosk.scss */
 .card-body {
   width: 100%;
   height: 10vh;
 }
-/* line 84, sass/kiosk.scss */
+/* line 86, sass/kiosk.scss */
 .card-body .subtext {
   text-align: center;
   padding-top: 10%;
   display: none;
 }
-/* line 89, sass/kiosk.scss */
+/* line 91, sass/kiosk.scss */
 .card-body .container {
   font-size: 2.5rem;
   text-align: center;
@@ -103,34 +108,34 @@ main div.bg-light {
   line-height: 5vh;
 }
 
-/* line 105, sass/kiosk.scss */
+/* line 107, sass/kiosk.scss */
 .arti-album img {
   max-width: 100%;
 }
 
-/* line 109, sass/kiosk.scss */
+/* line 111, sass/kiosk.scss */
 .arti-album .card-body {
   height: auto;
 }
 
-/* line 114, sass/kiosk.scss */
+/* line 116, sass/kiosk.scss */
 .artifact .card-body {
   height: auto;
 }
 
-/* line 119, sass/kiosk.scss */
+/* line 121, sass/kiosk.scss */
 strong span {
   text-decoration: underline;
   color: #1d7053;
 }
 
-/* line 124, sass/kiosk.scss */
+/* line 126, sass/kiosk.scss */
 .breathe {
   margin-bottom: 5vh;
   margin-top: 15vh;
 }
 
-/* line 129, sass/kiosk.scss */
+/* line 131, sass/kiosk.scss */
 .backbutton {
   max-height: 45px;
   padding-right: 1em;
@@ -138,40 +143,40 @@ strong span {
   left: 5vw;
   transition: .25s all ease;
 }
-/* line 135, sass/kiosk.scss */
+/* line 137, sass/kiosk.scss */
 .backbutton.active {
   transform: translate(5px, 5px);
 }
 
-/* line 140, sass/kiosk.scss */
+/* line 142, sass/kiosk.scss */
 .tbreadcrumb {
   margin-left: 8vw;
   position: absolute;
   font-size: 1.2em;
 }
-/* line 144, sass/kiosk.scss */
+/* line 146, sass/kiosk.scss */
 .tbreadcrumb strong span {
   cursor: pointer;
   transition: .5s all ease;
 }
-/* line 147, sass/kiosk.scss */
+/* line 149, sass/kiosk.scss */
 .tbreadcrumb strong span.clicked {
   font-size: 2em;
   text-decoration: none;
 }
 
-/* line 154, sass/kiosk.scss */
+/* line 156, sass/kiosk.scss */
 .discussion {
   border: #24c35b 3px solid;
 }
 
-/* line 158, sass/kiosk.scss */
+/* line 160, sass/kiosk.scss */
 .discussion header {
   text-align: center;
   font-weight: bold;
   padding-bottom: 1em;
 }
-/* line 163, sass/kiosk.scss */
+/* line 165, sass/kiosk.scss */
 .discussion .subject {
   font-style: italic;
   padding-bottom: .5em;
